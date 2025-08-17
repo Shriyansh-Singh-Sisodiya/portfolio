@@ -1,0 +1,32 @@
+.contact-info {
+  background: #1e293b; /* dark slate */
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.contact-info h4 {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+.contact-info a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-info .icon {
+  margin-right: 8px;
+  color: #38bdf8;
+}

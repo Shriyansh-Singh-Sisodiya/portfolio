@@ -1,0 +1,181 @@
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #121212, #1e1e2f);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.hero-socials {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+/* glassy top nav that works on dark hero */
+.hero-bs-nav {
+  background: rgba(18,18,18,0.55) !important;
+  backdrop-filter: blur(10px);
+}
+
+.navbar .nav-link {
+  color: #e5e7eb !important;
+  transition: color .2s ease;
+}
+.navbar .nav-link:hover {
+  color: #00bcd4 !important; /* your accent */
+}
+.navbar .navbar-brand {
+  color: #ffffff !important;
+}
+
+/* if fixed-top overlaps content, add some top padding to hero */
+.hero {
+  padding-top: 80px;
+}
+
+.hero-socials a {
+  font-size: 28px;
+  color: var(--text-color, #333);
+  transition: all 0.3s ease;
+}
+
+.hero-socials a:hover {
+  color: #0077b5; /* LinkedIn Blue vibe */
+  transform: scale(1.2);
+}
+
+/* Navbar */
+.hero-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: flex-end;
+  background: rgba(18,18,18,0.7);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+.hero-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.hero-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.hero-nav ul li a:hover {
+  color: #00bcd4;
+}
+
+/* Two-column layout */
+.hero-content.hero-two-column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  flex-wrap: wrap;
+}
+
+/* Text Column */
+.hero-text {
+  flex: 2;
+  min-width: 300px;
+}
+
+/* Image Column */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 200px;
+}
+
+/* Profile Picture */
+.hero-pfp {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #00bcd4;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Float animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Hero Text Styles */
+.hero h1 {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #00bcd4, #ff6b6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.hero-title {
+  font-size: 1.4rem;
+  color: #cfd8fc;
+  margin: 10px 0 20px;
+}
+
+.hero-summary {
+  max-width: 600px;
+  line-height: 1.8;
+  margin: 20px 0 30px;
+  color: #d1d5db;
+  text-align: justify; /* Justified */
+  font-size: 1.1rem;  
+}
+
+/* Buttons */
+.hero-buttons {
+  margin-bottom: 25px;
+}
+
+.hero-buttons a {
+  margin: 0 10px;
+  display: inline-block;
+  background: #00bcd4;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons a:hover {
+  background: #ff6b6b;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,188,212,0.5);
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .hero-content.hero-two-column {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-bottom: 30px;
+  }
+
+  .hero-summary {
+    max-width: 90%;
+  }
+}
+  

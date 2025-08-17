@@ -1,0 +1,55 @@
+.projects-container {
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  width: 350px;
+  margin: 15px;
+  padding: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.project-card h3 {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #d1d5db;
+  margin: 8px 0 15px;
+}
+
+.btn-custom {
+  display: inline-block;
+  background: linear-gradient(90deg, #00bcd4, #ff6b6b);
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,188,212,0.5);
+}
