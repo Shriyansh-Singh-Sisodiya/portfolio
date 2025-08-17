@@ -8,32 +8,32 @@ const Hero = () => {
     <section className="hero" id="hero">
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top hero-bs-nav">
-  <div className="container">
-    <a className="navbar-brand fw-semibold" href="#hero">Shriyansh ⚡</a>
+        <div className="container">
+          <a className="navbar-brand fw-semibold" href="#hero">Shriyansh ⚡</a>
 
-    <button
-      className="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#mainNav"
-      aria-controls="mainNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span className="navbar-toggler-icon"></span>
-    </button>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
 
-    <div className="collapse navbar-collapse" id="mainNav">
-      <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li className="nav-item"><a className="nav-link" href="#hero">Home</a></li>
-        <li className="nav-item"><a className="nav-link" href="#about">About</a></li>
-        <li className="nav-item"><a className="nav-link" href="#skills">Skills</a></li>
-        <li className="nav-item"><a className="nav-link" href="#projects">Projects</a></li>
-        <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+          <div className="collapse navbar-collapse" id="mainNav">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li className="nav-item"><a className="nav-link" href="#hero">Home</a></li>
+              <li className="nav-item"><a className="nav-link" href="#about">About</a></li>
+              <li className="nav-item"><a className="nav-link" href="#skills">Skills</a></li>
+              <li className="nav-item"><a className="nav-link" href="#projects">Projects</a></li>
+              <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
 
       {/* Two-column content */}
@@ -48,6 +48,17 @@ const Hero = () => {
           <div className="hero-buttons">
             <a href="#projects" className="btn-custom">See My Work</a>
             <a href="#contact" className="btn-custom">Contact Me</a>
+            <a
+              href="/Shriyansh_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              style={{ marginTop: 10 }}
+            >
+              Download Resume
+            </a>
+
+
+
           </div>
 
           {/* ✅ Social Icons */}
